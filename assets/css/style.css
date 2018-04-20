@@ -1,9 +1,12 @@
+/* Starter tags */
 html{
     height: 100%;
     margin: 0;
 }
 
+/* body tag */
 body{
+    /* Repeated background image */
     background-image: url(../images/funky-lines.png);
     background-repeat: repeat;
     color: #777777;
@@ -11,17 +14,23 @@ body{
     height: 100%;
 }
 
+/* Properties for wrapper container used for the sticky footer */
 .wrapper{
     min-height: 100%;
+    /* Negative margin the size of the footer */
     margin-bottom: -68px;
 }
 
+/* Clearfix to define the separation of the content */
 .clearfix::after{
     Content: "";
     Clear: both;
     display: block;
 }
 
+/* Section with the top bar styles */
+/* It's the same for all 3 html files */
+/* Header properties */
 header{
     background-color: #4aaaa5;
     float: left;
@@ -34,6 +43,7 @@ header{
     font-size: 22px;
 }
 
+/* Properties for section containing all the elements at the top of the page */
 .top{
     background-color:#ffffff;
     width: 100%;
@@ -43,6 +53,7 @@ header{
     border-bottom:solid;
 }
 
+/* Div used to center the contents inside the section */
 .HeaderMargin{
     width: auto;
     max-width: 960px;
@@ -52,6 +63,7 @@ header{
     
 }
 
+/* Specific properties to the elements on the right side of the header */
 .top h5{
     float: right;
     padding: 2px 20px;
@@ -60,6 +72,7 @@ header{
     margin-top: 36px;
 }
 
+/* Setting properties for the links at the top-right side of the page */
 .top a:link{
     color: #777777;
 }
@@ -73,13 +86,18 @@ header{
     color: #666666;
 }
 
+/* Class for the middle element of the links on the right side of the header. Used to create the separators. */
 .HeaderProfile{
     border-right: #cccccc solid;
     border-left: #cccccc solid;
     
 }
+/* End of the styles for the header section */
+/* 
+*/
 
 
+/* Section with the main content of the pages */
 .main{
     background-color: #ffffff;
     border: solid 2px #dddddd;
@@ -98,7 +116,11 @@ h2{
     margin-bottom: 30px;
     padding-bottom: 34px;
 }
+/* End of common styles */
+/* 
+ */
 
+/* index.html styles */
 .profilepic{
     float: left;
     padding: 0 34px 34px 0;
@@ -108,7 +130,11 @@ p{
     padding-bottom: 20px;
     line-height: 2;
 }
+/* End of styles for index.html */
+/* 
+ */
 
+/* contact.html styles */
 form{
     width: 100%;
 }
@@ -121,10 +147,12 @@ input[type=text]{
     margin: 12px 12px 12px 0;
 }
 
+/* Changes size of the message box */
 .inputMessage{
     height: 198px;
 }
 
+/* Changes style for submit button */
 input[type=submit]{
     font-size: 14px;
     padding: 13px 30px;
@@ -133,17 +161,24 @@ input[type=submit]{
     border: solid 1px #4aaaa5;
 }
 
+/* Adds hover property for submit button */
 input[type=submit]:hover{
     background-color: #ffffff;
     color: #4aaaa5;
     border: solid 1px #4aaaa5;
 }
+/* End of contact.html specific styles */
+/* 
+*/
 
-
+/* Styles for portfolio.html */
+    
+/* Div containing the content for portfolio. Used to set the width for the content */
 .portfolioimages{
     width: 960px;
 }
 
+/* Used to contain the images and text for each project shown in portfolio */
 .portfolio{
     position: relative;
     width: 275px;
@@ -152,6 +187,7 @@ input[type=submit]:hover{
     float: left;
 }
 
+/* Properties for the images of the projects */
 .portfolio img{
     float: left;
     height: 205px;
@@ -159,6 +195,7 @@ input[type=submit]:hover{
     
 }
 
+/* Text for the projects */
 .portfolio h3{
     background-color: #4aaaa5;
     text-align: center;
@@ -174,11 +211,16 @@ input[type=submit]:hover{
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/* End of the porfolio.html specific styles */
+/* 
+ */
 
+/* Section used to contain the footer and make it sticky */
 .push{
     height: 68px;
 }
 
+/* footer properties */
 footer{
     background-color: #666666;
     border-top: solid;
